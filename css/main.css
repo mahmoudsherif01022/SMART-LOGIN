@@ -1,0 +1,25 @@
+:root {
+  --color-pirimary: #24353f;
+  --color: #0ea2b8;
+}
+
+body {
+  background: var(--color-pirimary);
+  font-family: "Titillium Web", sans-serif;
+  color: var(--color);
+}
+nav {
+  background: var(color-pirimary);
+}
+.bg-pirimary {
+  background: var(--color-pirimary);
+  color: var(--color);
+}
+
+input {
+  background-color: transparent !important;
+  color: #fff !important;
+}
+.form-control::placeholder {
+  color: #95989b;
+}

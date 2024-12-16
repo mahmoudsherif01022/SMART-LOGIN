@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <section class="m-5 text-center">
+      <div class="container-fluid w-75 shadow-lg py-4">
+        <h1>Smart Login System</h1>
+
+        <div class="px-5">
+          <div class="form-control bg-pirimary border-0">
+            <input
+              id="signupName"
+              class="form-control form-control-lg my-4"
+              placeholder="Enter your Name"
+              type="text"
+            />
+
+            <p
+              id="massageValidName"
+              class="massageValid alert alert-danger p-1 d-none"
+            >
+              Please follow the rules below : Site name must contain at least 3
+              characters
+            </p>
+
+            <input
+              id="signupEmail"
+              class="form-control form-control-lg my-4"
+              placeholder="Enter your email"
+              type="email"
+            />
+
+            <p id="massageValidEmail" class="alert alert-danger p-1 d-none">
+              Please follow the rules below : Invalid email! A valid email
+              should:\n" + Contain '@' and a domain (e.g., @gmail.com).\n + Not
+              have spaces or special characters.
+            </p>
+
+            <input
+              id="signupPassword"
+              class="form-control form-control-lg my-4"
+              placeholder="Enter your password"
+              type="password"
+            />
+
+            <p id="massageValidPassword" class="alert alert-danger p-1 d-none">
+              Please follow the rules below : Minimum eight characters,
+            </p>
+            <p id="validMessage"></p>
+
+            <button class="btn btn-outline-info w-100 my-3">Sign Up</button>
+          </div>
+        </div>
+        <p class="text-white __web-inspector-hide-shortcut__">
+          You have an account?
+          <a class="text-white" href="./index.html">Signin</a>
+        </p>
+      </div>
+    </section>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/singup.js"></script>
+  </body>
+</html>

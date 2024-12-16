@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SMART LOGIN</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <section class="m-5 text-center">
+      <div class="container-fluid w-75 shadow-lg py-4">
+        <h1>Smart Login System</h1>
+        <div class="px-5">
+          <div class="form-control bg-pirimary border-0">
+            <input
+              id="signinEmail"
+              class="form-control form-control-lg my-4"
+              placeholder="Enter your email"
+              type="text"
+            />
+            <p id="massageValidEmail" class="alert alert-danger p-1 d-none">
+              Please follow the rules below : Invalid email! A valid email
+              should:\n" + Contain '@' and a domain (e.g., @gmail.com).\n + Not
+              have spaces or special characters.
+            </p>
+
+            <input
+              id="signinPassword"
+              class="form-control form-control-lg my-4"
+              placeholder="Enter your password"
+              type="password"
+            />
+
+            <p id="massageValidPassword" class="alert alert-danger p-1 d-none">
+              Please follow the rules below : Minimum eight characters,
+            </p>
+
+            <p id="validlogin"></p>
+
+            <button class="btn btn-outline-info w-100 my-3 loginn">
+              Login
+            </button>
+          </div>
+        </div>
+        <p class="text-white">
+          Don’t have an account?
+          <a class="text-white" href="./signup.html">Sign Up</a>
+        </p>
+      </div>
+    </section>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
